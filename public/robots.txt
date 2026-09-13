@@ -1,8 +1,8 @@
 # robots.txt for Cláudio Victor — Portfolio
-# Replace https://YOUR-DOMAIN.vercel.app with your live Vercel domain (e.g. https://claudiovictor.vercel.app)
+# Live Vercel domain: https://claudiovictor.vercel.app
 
 User-agent: *
 Allow: /
 
 # XML Sitemap
-Sitemap: https://YOUR-DOMAIN.vercel.app/sitemap.xml
+Sitemap: https://claudiovictor.vercel.app/sitemap.xml

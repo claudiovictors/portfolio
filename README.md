@@ -8,7 +8,7 @@ Personal portfolio of **Cláudio Manuel Victor**, a **Full-Stack Developer** foc
 
 ---
 
-## Features & Highlights
+## ⚡ Features & Highlights
 
 - **Dark / Light Theme Mode**: Smooth theme toggling with system preference detection and `localStorage` persistence.
 - **Dynamic Projects & GitHub Sync**: Real-time integration with the GitHub REST API (`/users/claudiovictors/repos`) with graceful static fallback for offline or rate-limited environments.
@@ -26,7 +26,7 @@ Personal portfolio of **Cláudio Manuel Victor**, a **Full-Stack Developer** foc
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Core**: HTML5, Modern CSS3 (CSS Variables, Flexbox, CSS Grid), Vanilla JavaScript (ES6+)
 - **Build Tool**: Vite (Lightning-fast development and optimized production bundling)
@@ -36,7 +36,7 @@ Personal portfolio of **Cláudio Manuel Victor**, a **Full-Stack Developer** foc
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 ├── public/
@@ -65,7 +65,7 @@ Personal portfolio of **Cláudio Manuel Victor**, a **Full-Stack Developer** foc
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -102,7 +102,7 @@ The output will be placed in the `dist/` directory, ready to deploy.
 
 ---
 
-## Deploy to Vercel
+## 🌐 Deploy to Vercel
 
 The project includes a ready-to-use `vercel.json` file.
 
@@ -119,7 +119,7 @@ The project includes a ready-to-use `vercel.json` file.
 4. Framework Preset: **Vite** (detected automatically).
 5. Click **"Deploy"**.
 
-> **Tip**: After deploying, if you connect a custom domain (e.g. `https://claudiovictor.dev` or `https://claudiovictor.vercel.app`), update the canonical URL in `index.html`, `public/sitemap.xml`, and `public/robots.txt` with your domain name.
+> 💡 **Live Production Domain**: Deployed at [`https://claudiovictor.vercel.app/`](https://claudiovictor.vercel.app/). All canonical SEO tags, Open Graph meta tags, Schema.org JSON-LD data, `robots.txt`, and `sitemap.xml` are aligned with this domain.
 
 ---
 
