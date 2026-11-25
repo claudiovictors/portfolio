@@ -1,0 +1,16 @@
+{
+  "name": "Cláudio Victor — Full-Stack Developer",
+  "short_name": "Cláudio Victor",
+  "description": "Personal portfolio of Cláudio Manuel Victor, a Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

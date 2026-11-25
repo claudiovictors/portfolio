@@ -1,634 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Primary Technical SEO -->
     <title>Cláudio Victor — Full-Stack Developer | Backend Focus</title>
-    <meta name="description" content="Personal portfolio of Cláudio Manuel Victor, a Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems." />
+    <meta
+      name="description"
+      content="Personal portfolio of Cláudio Manuel Victor, a Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems."
+    />
     <meta name="author" content="Cláudio Manuel Victor" />
     <meta name="robots" content="index, follow" />
-    <meta name="google-site-verification" content="xWzLAwC2oRWQ3HhRxWHgexudbkqmkqUoAUL_BRwSPPE" />
-    <meta name="keywords" content="Cláudio Victor, Cláudio Manuel Victor, Full-Stack Developer, Backend Developer, PHP, Go, Golang, Laravel, Fiber, REST APIs, Luanda, Angola, Software Engineer, Portfolio" />
+    <meta
+      name="google-site-verification"
+      content="xWzLAwC2oRWQ3HhRxWHgexudbkqmkqUoAUL_BRwSPPE"
+    />
+    <meta
+      name="keywords"
+      content="Cláudio Victor, Cláudio Manuel Victor, Full-Stack Developer, Backend Developer, PHP, Go, Golang, Laravel, Fiber, REST APIs, Luanda, Angola, Software Engineer, Portfolio"
+    />
     <link rel="canonical" href="https://claudiovictor.vercel.app/" />
 
     <!-- Theme & Color Scheme -->
-    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#080808" />
+    <meta name="color-scheme" content="dark" />
 
-    <!-- Favicons & Touch Icons -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-    
+    <!-- Favicons & Web Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <!-- Open Graph (Facebook, LinkedIn, Discord) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Cláudio Victor Portfolio" />
     <meta property="og:url" content="https://claudiovictor.vercel.app/" />
-    <meta property="og:title" content="Cláudio Victor — Full-Stack Developer | Backend Focus" />
-    <meta property="og:description" content="Personal portfolio of Cláudio Manuel Victor, a Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems." />
-    <meta property="og:image" content="https://claudiovictor.vercel.app/assets/og-image.png" />
+    <meta
+      property="og:title"
+      content="Cláudio Victor — Full-Stack Developer | Backend Focus"
+    />
+    <meta
+      property="og:description"
+      content="Personal portfolio of Cláudio Manuel Victor, a Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems."
+    />
+    <meta
+      property="og:image"
+      content="https://claudiovictor.vercel.app/assets/og-image.png"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Cláudio Victor — Full-Stack Developer Portfolio" />
+    <meta
+      property="og:image:alt"
+      content="Cláudio Victor — Full-Stack Developer Portfolio"
+    />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@VictorCla20025" />
     <meta name="twitter:url" content="https://claudiovictor.vercel.app/" />
-    <meta name="twitter:title" content="Cláudio Victor — Full-Stack Developer | Backend Focus" />
-    <meta name="twitter:description" content="Personal portfolio of Cláudio Manuel Victor, a Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems." />
-    <meta name="twitter:image" content="https://claudiovictor.vercel.app/assets/og-image.png" />
-    <meta name="twitter:image:alt" content="Cláudio Victor — Full-Stack Developer Portfolio" />
+    <meta
+      name="twitter:title"
+      content="Cláudio Victor — Full-Stack Developer | Backend Focus"
+    />
+    <meta
+      name="twitter:description"
+      content="Personal portfolio of Cláudio Manuel Victor, a Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://claudiovictor.vercel.app/assets/og-image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Cláudio Victor — Full-Stack Developer Portfolio"
+    />
 
-    <!-- JSON-LD Structured Data (Schema.org ProfilePage & Person) -->
+    <!-- Typography: Bricolage Grotesque + Fraunces + Plus Jakarta Sans + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JSON-LD Structured Data (Schema.org WebSite, ProfilePage & Person) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://claudiovictor.vercel.app/#website",
-          "url": "https://claudiovictor.vercel.app/",
-          "name": "Cláudio Victor — Full-Stack Developer",
-          "description": "Personal portfolio of Cláudio Manuel Victor, a Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems.",
-          "inLanguage": "en"
-        },
-        {
-          "@type": "ProfilePage",
-          "@id": "https://claudiovictor.vercel.app/#profilepage",
-          "url": "https://claudiovictor.vercel.app/",
-          "name": "Cláudio Victor — Full-Stack Developer | Backend Focus",
-          "isPartOf": {
-            "@id": "https://claudiovictor.vercel.app/#website"
-          },
-          "mainEntity": {
-            "@type": "Person",
-            "@id": "https://claudiovictor.vercel.app/#person",
-            "name": "Cláudio Manuel Victor",
-            "alternateName": ["Cláudio Victor", "claudiovictors"],
-            "jobTitle": "Full-Stack Developer",
-            "description": "Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems.",
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://claudiovictor.vercel.app/#website",
             "url": "https://claudiovictor.vercel.app/",
-            "image": "https://claudiovictor.vercel.app/assets/profile.jpg",
-            "email": "mailto:barrosclaudio147@gmail.com",
-            "telephone": "+244931474092",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Luanda",
-              "addressCountry": "AO"
+            "name": "Cláudio Victor — Full-Stack Developer",
+            "description": "Personal portfolio of Cláudio Manuel Victor, a Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems.",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://claudiovictor.vercel.app/#profilepage",
+            "url": "https://claudiovictor.vercel.app/",
+            "name": "Cláudio Victor — Full-Stack Developer | Backend Focus",
+            "isPartOf": {
+              "@id": "https://claudiovictor.vercel.app/#website"
             },
-            "sameAs": [
-              "https://github.com/claudiovictors",
-              "https://www.linkedin.com/in/claudiovictor/"
-            ],
-            "knowsAbout": [
-              "Backend Development",
-              "PHP",
-              "Go",
-              "Golang",
-              "Laravel",
-              "Fiber",
-              "RESTful APIs",
-              "Relational Databases",
-              "MySQL",
-              "PostgreSQL",
-              "Software Architecture",
-              "Linux",
-              "Docker",
-              "Business Systems"
-            ]
+            "mainEntity": {
+              "@type": "Person",
+              "@id": "https://claudiovictor.vercel.app/#person",
+              "name": "Cláudio Manuel Victor",
+              "alternateName": ["Cláudio Victor", "claudiovictors"],
+              "jobTitle": "Full-Stack Developer",
+              "description": "Full-Stack Developer focused on backend development, PHP, Go, APIs, and business systems.",
+              "url": "https://claudiovictor.vercel.app/",
+              "image": "https://avatars.githubusercontent.com/u/157994325?v=4",
+              "email": "mailto:barrosclaudio147@gmail.com",
+              "telephone": "+244931474092",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Luanda",
+                "addressCountry": "AO"
+              },
+              "sameAs": [
+                "https://github.com/claudiovictors",
+                "https://www.linkedin.com/in/claudiovictor/",
+                "https://linkedin.com/in/cláudio-victor-710986291",
+                "https://x.com/VictorCla20025"
+              ],
+              "knowsAbout": [
+                "Backend Development",
+                "PHP",
+                "Go",
+                "Golang",
+                "Laravel",
+                "Fiber",
+                "RESTful APIs",
+                "Relational Databases",
+                "MySQL",
+                "PostgreSQL",
+                "SQLite",
+                "TypeScript",
+                "React",
+                "React Native",
+                "Software Architecture",
+                "Linux",
+                "Business Systems"
+              ]
+            }
           }
-        }
-      ]
-    }
+        ]
+      }
     </script>
-
-    <!-- Boxicons CDN (Icons Only) -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-
-    <!-- Pure Native CSS -->
-    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <!-- Accessibility Skip Link -->
-    <a href="#main-content" class="skip-link" id="skip-to-content">Skip to main content</a>
-
-    <!-- Top Navigation -->
-    <header class="header" id="header">
-      <div class="container header-container">
-        <a href="#hero" class="brand" id="nav-brand" aria-label="Cláudio Victor Portfolio Home">
-          <span class="brand-badge">CV</span>
-          <span class="brand-name">Cláudio Victor</span>
-        </a>
-
-        <nav aria-label="Main Navigation">
-          <ul class="nav-menu" id="nav-menu">
-            <li><a href="#hero" class="nav-link active" id="nav-link-home">Home</a></li>
-            <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
-            <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
-            <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
-            <li><a href="#experience" class="nav-link" id="nav-link-experience">Experience</a></li>
-            <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="nav-actions">
-          <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle light and dark color mode">
-            <i class="bx bx-sun" id="theme-icon"></i>
-          </button>
-          <button type="button" class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-panel">
-            <i class="bx bx-menu" id="mobile-menu-icon"></i>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- Mobile Navigation Drawer -->
-    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
-    <div class="mobile-nav-panel" id="mobile-nav-panel" aria-label="Mobile Navigation Menu">
-      <ul class="mobile-nav-links">
-        <li><a href="#hero" class="mobile-nav-link nav-link" id="mobile-link-home">Home</a></li>
-        <li><a href="#about" class="mobile-nav-link nav-link" id="mobile-link-about">About</a></li>
-        <li><a href="#projects" class="mobile-nav-link nav-link" id="mobile-link-projects">Projects</a></li>
-        <li><a href="#skills" class="mobile-nav-link nav-link" id="mobile-link-skills">Skills</a></li>
-        <li><a href="#experience" class="mobile-nav-link nav-link" id="mobile-link-experience">Experience</a></li>
-        <li><a href="#contact" class="mobile-nav-link nav-link" id="mobile-link-contact">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Main Content Area -->
-    <main id="main-content">
-      <!-- HERO SECTION -->
-      <section class="section hero-section" id="hero">
-        <div class="container">
-          <div class="hero-grid">
-            <!-- Left: Text Content -->
-            <div class="hero-text-content">
-              <div class="hero-salutation">
-                <span class="hero-salutation-dot"></span>
-                <span>Hi, I'm</span>
-              </div>
-              <h1 class="hero-h1" id="hero-heading">
-                <span class="hero-name">CLÁUDIO VICTOR</span>
-                <span class="hero-role">
-                  <span>Full-Stack Developer</span>
-                  <span class="hero-role-divider" aria-hidden="true">|</span>
-                  <span class="hero-role-pill">Backend Focus</span>
-                </span>
-              </h1>
-              <p class="hero-bio">
-                I build backend systems, APIs, web applications and developer tools with PHP and Go.
-              </p>
-              <div class="hero-location-text">
-                <span><i class="bx bx-map-pin"></i> Based in Luanda, Angola.</span>
-                <span><i class="bx bx-briefcase-alt-2"></i> Open to remote opportunities and relocation.</span>
-              </div>
-              <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
-                  <i class="bx bx-folder"></i> View My Projects
-                </a>
-                <a href="https://github.com/claudiovictors" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-hero-github">
-                  <i class="bx bxl-github"></i> GitHub
-                </a>
-              </div>
-            </div>
-
-            <!-- Right: Real Profile Image with Subtle Frame -->
-            <div class="hero-photo-wrapper">
-              <div class="photo-card" id="profile-card">
-                <div class="photo-inner">
-                  <img src="/assets/profile.jpg" alt="Cláudio Manuel Victor — Full-Stack and Backend Developer" width="400" height="432" id="hero-profile-img" fetchpriority="high" loading="eager" decoding="async" />
-                </div>
-                <div class="photo-status-badge">
-                  <span class="status-indicator">
-                    <span class="status-dot"></span>
-                    Available for Work
-                  </span>
-                  <span>Luanda, AO</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WHAT I BUILD SECTION (Development Philosophy) -->
-      <section class="section" id="philosophy">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-tag"><i class="bx bx-layer"></i> Architecture & Engineering</span>
-            <h2 class="section-title">What I Build</h2>
-            <p class="section-subtitle">
-              Focused on high reliability, clear domain logic, and clean software architecture across foundational systems.
-            </p>
-          </div>
-          <div class="philosophy-grid">
-            <div class="philosophy-card" id="philosophy-apis">
-              <div class="philosophy-icon-wrap"><i class="bx bx-transfer-alt"></i></div>
-              <h3 class="philosophy-title">APIs</h3>
-              <p class="philosophy-desc">
-                High-performance RESTful APIs, clean routing, token authentication, request validation, and strict JSON contracts.
-              </p>
-            </div>
-            <div class="philosophy-card" id="philosophy-backend">
-              <div class="philosophy-icon-wrap"><i class="bx bx-server"></i></div>
-              <h3 class="philosophy-title">Backend Systems</h3>
-              <p class="philosophy-desc">
-                Reliable server architectures, relational schema design, database indexing, and robust error boundary handling.
-              </p>
-            </div>
-            <div class="philosophy-card" id="philosophy-business">
-              <div class="philosophy-icon-wrap"><i class="bx bx-store-alt"></i></div>
-              <h3 class="philosophy-title">Business Applications</h3>
-              <p class="philosophy-desc">
-                Real-world point-of-sale software, vehicle rental management, e-commerce, and inventory workflow systems.
-              </p>
-            </div>
-            <div class="philosophy-card" id="philosophy-tools">
-              <div class="philosophy-icon-wrap"><i class="bx bx-terminal"></i></div>
-              <h3 class="philosophy-title">Developer Tools</h3>
-              <p class="philosophy-desc">
-                Custom web frameworks, CLI utilities, terminal-based applications, and productivity tools built with PHP and Go.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT SECTION -->
-      <section class="section" id="about">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-tag"><i class="bx bx-user"></i> Background</span>
-            <h2 class="section-title">About Me</h2>
-          </div>
-          <div class="about-layout">
-            <div class="about-text-content">
-              <p class="about-paragraph">
-                I'm a full-stack developer with a strong focus on backend development.
-              </p>
-              <p class="about-paragraph">
-                I mainly work with PHP and Go, building APIs, web applications, business systems and SaaS projects.
-              </p>
-              <p class="about-paragraph">
-                I've worked on projects including POS systems, e-commerce platforms, vehicle rental systems, laundry management systems and other applications driven by real business logic.
-              </p>
-              <p class="about-paragraph">
-                I'm currently completing my secondary education in Information Technology and continuously improving my skills through real-world projects and software development.
-              </p>
-            </div>
-
-            <aside class="about-sidebar" aria-label="Core Technical Focus Areas">
-              <div class="about-sidebar-title">Core Focus Areas</div>
-              <div class="focus-pills-list">
-                <div class="focus-pill-item">
-                  <span>Backend Development</span>
-                  <i class="bx bx-check"></i>
-                </div>
-                <div class="focus-pill-item">
-                  <span>APIs</span>
-                  <i class="bx bx-check"></i>
-                </div>
-                <div class="focus-pill-item">
-                  <span>Business Systems</span>
-                  <i class="bx bx-check"></i>
-                </div>
-                <div class="focus-pill-item">
-                  <span>SaaS</span>
-                  <i class="bx bx-check"></i>
-                </div>
-                <div class="focus-pill-item">
-                  <span>Developer Tools</span>
-                  <i class="bx bx-check"></i>
-                </div>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJECTS SECTION -->
-      <section class="section" id="projects">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-tag"><i class="bx bx-code-block"></i> Portfolio Work</span>
-            <h2 class="section-title">Selected Projects</h2>
-            <p class="section-subtitle">
-              A curated selection of frameworks, backend business platforms, CLI tools, and software experiments.
-            </p>
-          </div>
-
-          <div class="projects-controls">
-            <div class="projects-filter-group" role="tablist" aria-label="Filter projects by category">
-              <button type="button" class="filter-btn active" data-filter="all" id="filter-all" role="tab" aria-selected="true">All Projects</button>
-              <button type="button" class="filter-btn" data-filter="frameworks" id="filter-frameworks" role="tab" aria-selected="false">Frameworks</button>
-              <button type="button" class="filter-btn" data-filter="business" id="filter-business" role="tab" aria-selected="false">Business Systems</button>
-              <button type="button" class="filter-btn" data-filter="tools" id="filter-tools" role="tab" aria-selected="false">CLI & Tools</button>
-              <button type="button" class="filter-btn" data-filter="ai" id="filter-ai" role="tab" aria-selected="false">AI</button>
-            </div>
-          </div>
-
-          <!-- JavaScript Injected Projects Grid -->
-          <div class="projects-grid" id="projects-grid" aria-live="polite">
-            <!-- Populated cleanly via script.js projectsData array -->
-          </div>
-        </div>
-      </section>
-
-      <!-- OPEN SOURCE & GITHUB SECTION -->
-      <section class="section" id="github">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-tag"><i class="bx bxl-github"></i> Version Control</span>
-            <h2 class="section-title">Open Source & GitHub</h2>
-            <p class="section-subtitle">
-              Public code repositories, experiments, and active development on GitHub.
-            </p>
-          </div>
-
-          <div class="github-overview-card" id="github-overview">
-            <div class="github-profile-info">
-              <div class="github-icon-large" aria-hidden="true">
-                <i class="bx bxl-github"></i>
-              </div>
-              <div>
-                <div class="github-handle-title">github.com/claudiovictors</div>
-                <div class="github-handle-subtitle">Repositories & Open Source Contributions</div>
-              </div>
-            </div>
-            <a href="https://github.com/claudiovictors" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="btn-visit-github">
-              <i class="bx bx-link-external"></i> View GitHub Profile
-            </a>
-          </div>
-
-          <!-- Live GitHub Repositories (with static fallback) -->
-          <div class="repos-container" id="repos-grid">
-            <!-- Repositories rendered via script.js -->
-          </div>
-        </div>
-      </section>
-
-      <!-- SKILLS SECTION -->
-      <section class="section" id="skills">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-tag"><i class="bx bx-wrench"></i> Stack</span>
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="section-subtitle">
-              Technical proficiencies strictly organized by domain. No percentage bars or arbitrary skill ratings.
-            </p>
-          </div>
-
-          <div class="skills-grid">
-            <!-- Languages -->
-            <div class="skill-category-card" id="skills-languages">
-              <div class="skill-category-header">
-                <i class="bx bx-code-alt"></i>
-                <h3 class="skill-category-name">Languages</h3>
-              </div>
-              <div class="skill-items-list">
-                <div class="skill-item">
-                  <span class="skill-item-left"><i class="bx bxl-php"></i> PHP</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-item-left"><i class="bx bxl-go-lang"></i> Go</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-item-left"><i class="bx bxl-javascript"></i> JavaScript</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-item-left"><i class="bx bxl-html5"></i> HTML</span>
-                </div>
-                <div class="skill-item">
-                  <span class="skill-item-left"><i class="bx bxl-css3"></i> CSS</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Backend -->
-            <div class="skill-category-card" id="skills-backend">
-              <div class="skill-category-header">
-                <i class="bx bx-server"></i>
-                <h3 class="skill-category-name">Backend</h3>
-              </div>
-              <div class="skill-items-list">
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bx-cube"></i> Laravel</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bx-zap"></i> Fiber</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bx-network-chart"></i> REST APIs</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bx-transfer"></i> HTTP / JSON</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bx-lock-alt"></i> Authentication</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bx-git-commit"></i> Middleware</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bx-layout"></i> MVC</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bx-terminal"></i> CLI</span></div>
-              </div>
-            </div>
-
-            <!-- Databases -->
-            <div class="skill-category-card" id="skills-databases">
-              <div class="skill-category-header">
-                <i class="bx bx-data"></i>
-                <h3 class="skill-category-name">Databases</h3>
-              </div>
-              <div class="skill-items-list">
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bxs-data"></i> MySQL</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bxs-data"></i> PostgreSQL</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bx-table"></i> SQL</span></div>
-              </div>
-            </div>
-
-            <!-- Tools -->
-            <div class="skill-category-card" id="skills-tools">
-              <div class="skill-category-header">
-                <i class="bx bx-cog"></i>
-                <h3 class="skill-category-name">Tools & DevOps</h3>
-              </div>
-              <div class="skill-items-list">
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bxl-git"></i> Git</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bxl-github"></i> GitHub</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bxl-tux"></i> Linux</span></div>
-                <div class="skill-item"><span class="skill-item-left"><i class="bx bxl-docker"></i> Docker</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- EXPERIENCE & EDUCATION SECTION -->
-      <section class="section" id="experience">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-tag"><i class="bx bx-briefcase"></i> Background & Track Record</span>
-            <h2 class="section-title">Experience & Education</h2>
-          </div>
-
-          <div class="timeline-grid">
-            <!-- Experience Column -->
-            <div class="timeline-column" id="experience-column">
-              <div class="timeline-column-header">
-                <i class="bx bx-briefcase-alt"></i>
-                <span>Experience</span>
-              </div>
-              
-              <div class="timeline-card" id="exp-vehicle-rental">
-                <h3 class="timeline-role">Backend Developer</h3>
-                <div class="timeline-org">Vehicle Rental Management System</div>
-                <div class="timeline-period">
-                  <i class="bx bx-calendar"></i> Production Project
-                </div>
-                <ul class="timeline-desc-list">
-                  <li>Developed and maintained backend functionality for a vehicle rental management system.</li>
-                  <li>Implemented business rules, application workflows and database-related functionality.</li>
-                  <li>Contributed to the development and improvement of platform features.</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Education Column -->
-            <div class="timeline-column" id="education-column">
-              <div class="timeline-column-header">
-                <i class="bx bx-book-reader"></i>
-                <span>Education</span>
-              </div>
-
-              <div class="timeline-card" id="edu-joao-paulo">
-                <h3 class="timeline-role">Information Technology (IT)</h3>
-                <div class="timeline-org">Instituto Politécnico João Paulo II</div>
-                <div class="timeline-period">
-                  <i class="bx bx-calendar"></i> 2023 – 2026 &nbsp;|&nbsp; Expected Graduation: 2026
-                </div>
-                <ul class="timeline-desc-list">
-                  <li>Specialized secondary education in Information Technology and computer systems.</li>
-                  <li>Focusing on algorithms, database management, software engineering, and network foundations.</li>
-                  <li>Continuous application of theoretical concepts into practical software and frameworks.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT SECTION -->
-      <section class="section" id="contact">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-tag"><i class="bx bx-envelope"></i> Inquiries</span>
-            <h2 class="section-title">Let's Build Something</h2>
-          </div>
-
-          <div class="contact-container-inner">
-            <div class="contact-text-area">
-              <p class="contact-message">
-                I'm open to backend, full-stack and software development opportunities.
-              </p>
-              <p class="contact-message">
-                If you're looking for a developer who enjoys building real systems and learning through challenging projects, let's connect.
-              </p>
-              <div class="contact-direct-actions">
-                <a href="mailto:barrosclaudio147@gmail.com" class="btn btn-primary" id="btn-email-primary">
-                  <i class="bx bx-send"></i> Send Email
-                </a>
-                <a href="https://www.linkedin.com/in/claudiovictor/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-linkedin-direct">
-                  <i class="bx bxl-linkedin"></i> Connect on LinkedIn
-                </a>
-              </div>
-            </div>
-
-            <!-- Direct Contact Channels -->
-            <div class="contact-channels-card" id="contact-channels-list">
-              <!-- Email -->
-              <div class="channel-item" id="contact-item-email">
-                <div class="channel-left">
-                  <div class="channel-icon" aria-hidden="true"><i class="bx bx-envelope"></i></div>
-                  <div class="channel-details">
-                    <span class="channel-label">Email</span>
-                    <span class="channel-val">barrosclaudio147@gmail.com</span>
-                  </div>
-                </div>
-                <button type="button" class="copy-btn" data-copy="barrosclaudio147@gmail.com" id="copy-email-btn" aria-label="Copy email address">
-                  <i class="bx bx-copy"></i> Copy
-                </button>
-              </div>
-
-              <!-- GitHub -->
-              <div class="channel-item" id="contact-item-github">
-                <div class="channel-left">
-                  <div class="channel-icon" aria-hidden="true"><i class="bx bxl-github"></i></div>
-                  <div class="channel-details">
-                    <span class="channel-label">GitHub</span>
-                    <a href="https://github.com/claudiovictors" target="_blank" rel="noopener noreferrer" class="channel-val">github.com/claudiovictors</a>
-                  </div>
-                </div>
-                <a href="https://github.com/claudiovictors" target="_blank" rel="noopener noreferrer" class="copy-btn" id="btn-open-github" aria-label="Open GitHub profile">
-                  <i class="bx bx-link-external"></i> Visit
-                </a>
-              </div>
-
-              <!-- LinkedIn -->
-              <div class="channel-item" id="contact-item-linkedin">
-                <div class="channel-left">
-                  <div class="channel-icon" aria-hidden="true"><i class="bx bxl-linkedin"></i></div>
-                  <div class="channel-details">
-                    <span class="channel-label">LinkedIn</span>
-                    <a href="https://www.linkedin.com/in/claudiovictor/" target="_blank" rel="noopener noreferrer" class="channel-val">linkedin.com/in/claudiovictor</a>
-                  </div>
-                </div>
-                <a href="https://www.linkedin.com/in/claudiovictor/" target="_blank" rel="noopener noreferrer" class="copy-btn" id="btn-open-linkedin" aria-label="Open LinkedIn profile">
-                  <i class="bx bx-link-external"></i> Visit
-                </a>
-              </div>
-
-              <!-- Phone -->
-              <div class="channel-item" id="contact-item-phone">
-                <div class="channel-left">
-                  <div class="channel-icon" aria-hidden="true"><i class="bx bx-phone"></i></div>
-                  <div class="channel-details">
-                    <span class="channel-label">Phone / WhatsApp</span>
-                    <span class="channel-val">+244 931 474 092</span>
-                  </div>
-                </div>
-                <button type="button" class="copy-btn" data-copy="+244931474092" id="copy-phone-btn" aria-label="Copy phone number">
-                  <i class="bx bx-copy"></i> Copy
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer" id="footer">
-      <div class="container footer-container">
-        <div class="footer-meta">
-          <p class="footer-copy">© 2026 Cláudio Manuel Victor</p>
-          <p class="footer-tech">Built with HTML, CSS &amp; JavaScript.</p>
-        </div>
-
-        <div class="footer-socials">
-          <a href="https://github.com/claudiovictors" target="_blank" rel="noopener noreferrer" class="footer-social-link" id="footer-link-github" aria-label="Cláudio Victor on GitHub">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/claudiovictor/" target="_blank" rel="noopener noreferrer" class="footer-social-link" id="footer-link-linkedin" aria-label="Cláudio Victor on LinkedIn">
-            <i class="bx bxl-linkedin"></i>
-          </a>
-          <button type="button" class="back-to-top-btn" id="back-to-top-btn" aria-label="Scroll to top of page">
-            <i class="bx bx-up-arrow-alt"></i> Top
-          </button>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Feedback Toast -->
-    <div class="toast" id="toast" role="status" aria-live="polite">
-      <i class="bx bx-check-circle"></i>
-      <span id="toast-message">Copied to clipboard</span>
-    </div>
-
-    <!-- Vanilla JavaScript File -->
-    <script type="module" src="./script.js"></script>
+  <body class="bg-[#080808] text-zinc-100 antialiased selection:bg-[#22d3a6]/25 selection:text-[#22d3a6]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

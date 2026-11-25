@@ -1,8 +1,4 @@
-# robots.txt for Cláudio Victor — Portfolio
-# Live Vercel domain: https://claudiovictor.vercel.app
-
 User-agent: *
 Allow: /
 
-# XML Sitemap
 Sitemap: https://claudiovictor.vercel.app/sitemap.xml
